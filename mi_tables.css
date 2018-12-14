@@ -14,21 +14,21 @@
 */
 
 /* Table Styles */
-table {
+table#pricing {
     background: linear-gradient(rgb(190, 215, 255), black);
     border: 5px solid grey;
 }
 
 th,
-tr {
+td {
     border: 3px solid grey;
     line-height: 1.4em;
     padding: 8px;
 }
 
 th {
-    color: rgb(130, 210, 255);
     background: black;
+    color: rgb(130, 210, 255);
     font-weight: normal;
 }
 
@@ -55,4 +55,9 @@ thead tr {
 
 thead tr:first-of-type th:first-of-type {
     font-size: 2em;
+}
+
+thead tr:first-of-type th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
 }
